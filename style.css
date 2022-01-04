@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kings&family=Merienda&display=swap');
+
+/* font-family: 'Fontdiner Swanky', cursive;
+font-family: 'Kings', cursive;
+font-family: 'Luxurious Roman', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head .logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.head {
+    position: fixed;
+    display: flex;
+    padding: 10px 200px;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    width: 100%;
+    -z-index: 2;
+}
+
+.head ul{
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.head ul a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#home {
+    background-image: url(images/wallpaper_s1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+}
+
+.text-wrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+#home h1 {
+    padding-bottom: 50px;
+    font-family: 'Kings', cursive;
+    letter-spacing: 5px;;
+}
+
+#home q {
+    padding: 0 120px;
+    font-family: 'Merienda', cursive;
+    font-size: 30px;
+}
+
+#houses {
+    height: 100vh;
+}
+
+.houses-wrap img {
+    width: 230px;
+    height: 230px;
+}
+
+#houses h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 150px 0 100px 0;
+    font-family: 'Merienda', cursive;
+    letter-spacing: 5px;;
+}
+
+.houses-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    cursor: pointer;
+}
+
+.hog_house {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+}
+
+.image-overlay {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+}
+
+.hog_house:hover {
+    /* animation: go-and-come 2s cubic-bezier(.32,.53,.83,.67);
+    animation-fill-mode: both; */
+    transition: opacity 1s;
+    opacity: 0;
+    border: 2px solid #000;
+}
+
+
