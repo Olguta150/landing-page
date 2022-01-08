@@ -72,6 +72,7 @@ font-family: 'Luxurious Roman', cursive; */
 
 #houses {
     height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .houses-wrap img {
@@ -84,7 +85,9 @@ font-family: 'Luxurious Roman', cursive; */
     font-size: 50px;
     padding: 150px 0 100px 0;
     font-family: 'Merienda', cursive;
-    letter-spacing: 5px;;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .houses-wrap {
@@ -107,18 +110,31 @@ font-family: 'Luxurious Roman', cursive; */
 
 .image-overlay {
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    border-radius: 5px;
 }
 
-.hog_house:hover {
-    /* animation: go-and-come 2s cubic-bezier(.32,.53,.83,.67);
-    animation-fill-mode: both; */
-    transition: opacity 1s;
+.image-overlay:hover {
+    opacity: 1;
+    transition: opacity .7s ease-in-out;
+}
+
+.emblem:hover {
     opacity: 0;
-    border: 2px solid #000;
+    transition: opacity .7s ease-in-out;
+}
+
+.hog_house q {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 50px;
+    width: 100%;
 }
 
 
