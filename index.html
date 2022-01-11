@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="head">
-        <div class="logo"><img src="images/logo.png" alt="logo_hogwarts_emblem"></div>
+        <div class="logo"><a href="#home"><img src="images/logo.png" alt="logo_hogwarts_emblem"></a></div>
         <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#houses">houses</a></li>
@@ -17,23 +17,34 @@
             <li><a href="#invitation">invitation</a></li>
         </ul>
     </header>
-    <div id="home">
+    <div class="sections">
+    <div id="home" class="section">
         <div class="text-wrap">
         <h1>Welcome to Hogwarts</h1>
         <q>Whether you come back by page or by the big screen, Hogwarts will always be there to welcome you home.</q>
         </div>
     </div>
-    <div id="houses">
+    <div id="houses" class="section">
         <h2>Hogwarts Houses</h2>
         <div class="houses-wrap">
-        <div class="hog_house"><img class="emblem gryffindor" src="images/griffindor.png" alt="gryffindor_logo">Gryffindor <div class="image-overlay"> <q> Their daring, nerve and chivalry set Gryffindors apart</q></div> </div>
-        <div class="hog_house"><img class="emblem hufflepuff" src="images/hufflepuff.png" alt="hufflepuff_logo">Hufflepuff<div class="image-overlay"><q>You might belong in Hufflepuff, where they are just and loyal, those patient Hufflepuff's are true and unafraid of toil...</q></div></div>
-        <div class="hog_house"><img class="emblem ravenclaw" src="images/ravenclaw.png" alt="ravenclaw_logo">Ravenclaw<div class="image-overlay"><q>Wit beyond measure is man's greatest treasure</q></div></div>
-        <div class="hog_house"><img class="emblem slytherin" src="images/slytherin.png" alt="slytherin_logo">Slytherin<div class="image-overlay"><q>You'll make your real friends, those cunning folk use any means, to achieve their ends</q></div></div>
+        <div class="hog_house gryffindor"><img class="emblem" src="images/griffindor.png" alt="gryffindor_logo">Gryffindor <div class="image-overlay"> <q> Their daring, nerve and chivalry set Gryffindors apart</q></div> </div>
+        <div class="hog_house hufflepuff"><img class="emblem" src="images/hufflepuff.png" alt="hufflepuff_logo">Hufflepuff<div class="image-overlay"><q>You might belong in Hufflepuff, where they are just and loyal, those patient Hufflepuff's are true and unafraid of toil...</q></div></div>
+        <div class="hog_house ravenclaw"><img class="emblem" src="images/ravenclaw.png" alt="ravenclaw_logo">Ravenclaw<div class="image-overlay"><q>Wit beyond measure is man's greatest treasure</q></div></div>
+        <div class="hog_house slytherin"><img class="emblem" src="images/slytherin.png" alt="slytherin_logo">Slytherin<div class="image-overlay"><q>You'll make your real friends, those cunning folk use any means, to achieve their ends</q></div></div>
         </div>
     </div>
-    <div id="quotes"></div>
-    <div id="invitation"></div>
+    <div class="quotes-part">
+    <div id="quotes" class="section">
+        <div class="quote">Happiness can be found even in the darkest of times, if one only remembers to turn on the light. <p>— Albus Dumbledore</p> </div>
+    </div>
+    <div id="invitation" class="section" >
+        <div class="text-invitation">
+        <h1 class="title">It's never too late to come in Wizarding World</h1>
+        <p class="body">If you are still waiting for your Hogwarts letter, click on the sign up button and be part of this amazing world!</p></div>
+        <button class="btn">Sign up</button>
+    </div>
+    </div>
+    </div>
     <footer>Copyright &copy; The Odin Project 2021</footer>
 </body>
 </html>

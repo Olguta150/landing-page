@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kings&family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap');
 
 /* font-family: 'Fontdiner Swanky', cursive;
 font-family: 'Kings', cursive;
@@ -10,9 +11,13 @@ font-family: 'Luxurious Roman', cursive; */
     box-sizing: border-box;
 }
 
+body {
+    overflow-x:hidden;
+}
+
 .head .logo img{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
 }
 
 .head {
@@ -22,7 +27,7 @@ font-family: 'Luxurious Roman', cursive; */
     background: rgba(0, 0, 0, 0.9);
     top: 0;
     width: 100%;
-    -z-index: 2;
+    z-index: 2;
 }
 
 .head ul{
@@ -35,9 +40,17 @@ font-family: 'Luxurious Roman', cursive; */
 
 .head ul a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 23px;
     text-transform: uppercase;
     color: #fff;
+}
+
+.head ul a:hover {
+    color: rgba(254, 245, 206, 0.8);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #home {
@@ -52,8 +65,8 @@ font-family: 'Luxurious Roman', cursive; */
 .text-wrap {
     display: flex;
     flex-direction: column;
-    font-size: 35px;
-    padding-top: 250px;
+    font-size: 50px;
+    padding-top: 350px;
     text-align: center;
     color: #fff;
 }
@@ -67,8 +80,11 @@ font-family: 'Luxurious Roman', cursive; */
 #home q {
     padding: 0 120px;
     font-family: 'Merienda', cursive;
-    font-size: 30px;
+    font-size: 39px;
 }
+
+
+/* H O U S E S */
 
 #houses {
     height: 100vh;
@@ -76,14 +92,14 @@ font-family: 'Luxurious Roman', cursive; */
 }
 
 .houses-wrap img {
-    width: 230px;
-    height: 230px;
+    width: 300px;
+    height: 300px;
 }
 
 #houses h2 {
     text-align: center;
-    font-size: 50px;
-    padding: 150px 0 100px 0;
+    font-size: 65px;
+    padding: 200px 0 100px 0;
     font-family: 'Merienda', cursive;
     letter-spacing: 5px;
     color: #fff;
@@ -94,7 +110,7 @@ font-family: 'Luxurious Roman', cursive; */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 100px;
     cursor: pointer;
 }
 
@@ -105,7 +121,9 @@ font-family: 'Luxurious Roman', cursive; */
     text-align: center;
     gap: 20px;
     font-family: 'Merienda', cursive;
-    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 30px;
 }
 
 .image-overlay {
@@ -113,7 +131,6 @@ font-family: 'Luxurious Roman', cursive; */
     opacity: 0;
     width: 100%;
     height: 100%;
-    /* border: 2px solid #000; */
     background: rgba(0, 0, 0, 0.95);
     color: white;
     border-radius: 5px;
@@ -133,8 +150,112 @@ font-family: 'Luxurious Roman', cursive; */
     position: absolute;
     text-align: center;
     left: 0;
-    top: 50px;
     width: 100%;
 }
 
+.gryffindor q {
+    position: absolute;
+    top: 95px;
+}
 
+.hufflepuff q {
+    top: 47px;
+}
+
+.ravenclaw q {
+    top: 90px;
+}
+
+.slytherin q {
+    top: 80px;
+}
+
+
+/* Q U O T E S */
+.quotes-part {
+    background-image: url(/images/quotes-bg.jpg);
+    background-size: cover;
+    height: 130vh;
+    width: 100vw;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.quote {
+    background: rgba(65, 65, 114, 0.6);
+    width: 100%;
+    color: #fff;
+    margin-top: 330px;
+    font-size: 43px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-style: italic;
+    padding: 100px 200px;
+    line-height: 60px;
+}
+
+.quote p {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+
+/* I N V I T A T I O N */
+#invitation {
+    background: rgba(254, 245, 206, 0.9);
+    width: 65%;
+    margin-top: 250px;
+    margin-left: 350px;
+    padding: 30px 70px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    border-radius: 5px;
+    font-family: 'Merienda', cursive;
+}
+
+#invitation .text-invitation {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#invitation .title {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+}
+
+#invitation .body {
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+#invitation .btn {
+    background: transparent;
+    height: 50px;
+    width: 170px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #060680;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all .3s ease-in-out;
+}
+
+#invitation .btn:hover {
+    background:rgba(65, 65, 114, 0.9);
+    color: #fff;
+    box-shadow: 2px 2px 10px 0 rgba(6, 6, 128, 0.2);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: .5px;
+}

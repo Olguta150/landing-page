@@ -71,7 +71,11 @@ Carousel quotes
 
 ---------------------------------------------------------------
 
--> section 4
+-> invitation
+
+It's never too late to come in Wizarding World
+
+If you are still waiting for your Hogwarts letter, click on the sign up button and be part of this amazing world
 
 ---------------------------------------------------------------
 
